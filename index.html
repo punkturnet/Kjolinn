@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kjólinn fyrir jólinn</title>
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css">
+  </head>
+  <body ng-app="KjolinnApp" ng-strict-di>
+
+    <!-- Fixed position loading indicator -->
+    <loading class="loading-indicator"></loading>
+
+    <div class="container">
+      <ui-view>
+        <div class="text-center initial-loading">
+          <h2>Loading Site...</h2>
+        </div>
+      </ui-view>
+    </div>
+
+    <!-- Libs -->
+    <script src="lib/jquery-2.1.4.min.js"></script>
+    <script src="lib/bootstrap.min.js"></script>
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-ui-router.min.js"></script>
+    <script src="src/KjolinnModule.js"></script>
+    <script src="src/KjolinnServices.js"></script>
+    <script src="src/KjolinnRoutes.js"></script>
+    <script src="src/KjolinnControllers.js"></script>
+    <script src="src/KjolinnComponents.js"></script>
+    <!--
+    <script src="src/common/loading/loading.component.js"></script>
+    <script src="src/common/loading/loading.interceptor.js"></script>
+    <script src="src/common/menu.service.js"></script>
+    -->
+
+  </body>
+
+</html>
