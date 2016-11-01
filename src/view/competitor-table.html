@@ -1,0 +1,28 @@
+<table class="table table-striped table-hover table-bordered">
+    <thead>
+        <tr>
+            <th class="text-left">Nafn</th>
+            <th class="text-left">Deild</th>
+            <th class="text-left">Hópur</th>
+            <th class="text-right">W1 kg.</th>
+            <th class="text-right">W1 %</th>
+            <th class="text-right">W2 kg.</th>
+            <th class="text-right">W2 %</th>
+            <th class="text-right">∑ kg.</th>
+            <th class="text-right">∑ %</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr data-ng-repeat="competitor in $ctrl.competitors">
+          <td class="text-left">{{competitor.name}}</td>
+          <td class="text-left"><a href="#" ui-sref="/department/{{competitor.dep}}">{{competitor.dep}}</a></td>
+          <td class="text-left"><a href="#" ui-sref="/group/{{competitor.group}}">{{competitor.group}}</a></td>
+          <td class="text-right">{{competitor.w1weight}}</td>
+          <td class="text-right">{{competitor.w1per}}%</td>
+          <td class="text-right">{{competitor.w2weight}}</td>
+          <td class="text-right">{{competitor.w2per}}%</td>
+          <td class="text-right">{{competitor.totalweight}}</td>
+          <td class="text-right">{{competitor.totalper}}%</td>
+        </tr>
+    </tbody>
+</table>

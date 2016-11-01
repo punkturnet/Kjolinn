@@ -2,15 +2,16 @@
 'use strict';
 
     angular.module('KjolinnApp')
-    .controller('IndividualController', IndividualController)
-    .controller('IndividualController', IndividualController)
-    .controller('IndividualController', IndividualController)
-    .controller('IndividualController', IndividualController);
+    .controller('HomeController', HomeController)
+    .controller('AllController', AllController)
+    .controller('DepartmentController', DepartmentController)
+    .controller('DivisionController', DivisionController);
 
-    IndividualController.$inject = ['KjolinnService'];
-    function IndividualController(KjolinnService){
-        var ctrl = this;
-        ctrl.myInfo = KjolinnService.GetMyInfo();
+    HomeController.$inject = ['$rootScope', 'myinfo'];
+    function HomeController($rootScope, myinfo){
+        var homeCtrl = this;
+        $rootScope.Username = 'Ásgeir Freyr Kristinsson';
+        homeCtrl.myInfo = myinfo;
     }
 
     AllController.$inject = ['KjolinnService'];
@@ -19,10 +20,10 @@
         ctrl.myInfo = KjolinnService.GetMyInfo();
     }
 
-    DepartmentController.$inject = ['KjolinnService'];
-    function DepartmentController(KjolinnService){
-        var ctrl = this;
-        ctrl.myInfo = KjolinnService.GetMyInfo();
+    DepartmentController.$inject = ['KjolinnService', 'items'];
+    function DepartmentController(KjolinnService, items){
+        var depCtrl = this;
+        depCtrl.items = items;
     }
 
     DivisionController.$inject = ['KjolinnService'];

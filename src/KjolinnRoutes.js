@@ -4,20 +4,20 @@
 angular.module('KjolinnApp')
 .config(routeConfig);
 
-/**
- * Configures the routes and views
- */
-routeConfig.$inject = ['$stateProvider'];
-function routeConfig ($stateProvider) {
+routeConfig.$inject = ['$stateProvider', '$urlRouterProvider'];
+function routeConfig ($stateProvider, $urlRouterProvider) {
+
+  $urlRouterProvider.otherwise('/');
+
   // Routes
   $stateProvider
-    .state('myinfo', {
+    .state('home', {
       url: '/',
       templateUrl: 'src/view/home.html',
       controller: 'HomeController',
       controllerAs: 'homeCtrl',
       resolve: {
-        items: ['KjolinnService', function (KjolinnService) {
+        myinfo: ['KjolinnService', function (KjolinnService) {
           return KjolinnService.getMyInfo();
         }]
       }
