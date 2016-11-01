@@ -1,0 +1,883 @@
+var data = { "competitors" : [
+    {
+        "name": "Þorgeir Ómarsson",
+        "dep": "Viðskiptalausnir",
+        "group": "Vöruþróun",
+        "w1weight": "-1.9",
+        "w1per": "-2.25",
+        "w2weight": "0.2",
+        "w2per": "0.24",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Þórey Sigurbjörnsdóttir",
+        "dep": "Viðskiptalausnir",
+        "group": "Microsoft ráðgjöf og þjónusta",
+        "w1weight": "-0.8",
+        "w1per": "-1.05",
+        "w2weight": "-0.7",
+        "w2per": "-0.93",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Þórdís Magnúsdóttir",
+        "dep": "Viðskiptalausnir",
+        "group": "Dynamics NAV Þróun",
+        "w1weight": "-0.9",
+        "w1per": "-1.11",
+        "w2weight": "-0.7",
+        "w2per": "-0.87",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Þór Eiríksson",
+        "dep": "Rekstrarlausnir",
+        "group": "Vörustýring",
+        "w1weight": "-0.2",
+        "w1per": "-0.20",
+        "w2weight": "0",
+        "w2per": "0.00",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Ysabel N. S. M. de Eliasson",
+        "dep": "Fjármál og rekstur",
+        "group": "Mötuneyti",
+        "w1weight": "-0.9",
+        "w1per": "-1.23",
+        "w2weight": "0.6",
+        "w2per": "0.82",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Viktoría Valdís Guðbjörnsdóttir",
+        "dep": "Viðskiptalausnir",
+        "group": "Dynamics NAV Þjónusta og ráðgjöf",
+        "w1weight": "-1.7",
+        "w1per": "-1.91",
+        "w2weight": "0.5",
+        "w2per": "0.56",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Valgerður Kristín Einarsdóttir",
+        "dep": "Fjármál og rekstur",
+        "group": "Þjónustuborð",
+        "w1weight": "1.9",
+        "w1per": "1.62",
+        "w2weight": "0",
+        "w2per": "0.00",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Valgeir Smári Óskarsson",
+        "dep": "Viðskiptalausnir",
+        "group": "Viðskiptalausnasvið",
+        "w1weight": "0",
+        "w1per": "0.00",
+        "w2weight": "0",
+        "w2per": "0.00",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Tryggvi Geir Magnússon",
+        "dep": "Viðskiptalausnir",
+        "group": "Viðmótslausnir og hönnun",
+        "w1weight": "1.5",
+        "w1per": "1.81",
+        "w2weight": "0",
+        "w2per": "0.00",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Tómas Karl Kjartansson",
+        "dep": "Hugbúnaðarlausnir",
+        "group": "Ráðgjöf",
+        "w1weight": "-0.4",
+        "w1per": "-0.35",
+        "w2weight": "2.3",
+        "w2per": "1.97",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Sverrir Hákonarson",
+        "dep": "Rekstrarlausnir",
+        "group": "Söluráðgjöf",
+        "w1weight": "0",
+        "w1per": "0.00",
+        "w2weight": "0",
+        "w2per": "0.00",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Sveinn Henrik Kristinsson",
+        "dep": "Hugbúnaðarlausnir",
+        "group": "Skattar",
+        "w1weight": "0",
+        "w1per": "0.00",
+        "w2weight": "0",
+        "w2per": "0.00",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Sturla Þorvaldsson",
+        "dep": "Viðskiptalausnir",
+        "group": "Appþróun",
+        "w1weight": "0",
+        "w1per": "0.00",
+        "w2weight": "0",
+        "w2per": "0.00",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Steven James Dolan",
+        "dep": "Sölu- og markaðssvið",
+        "group": "Verkstæði",
+        "w1weight": "0",
+        "w1per": "0.00",
+        "w2weight": "-1.5",
+        "w2per": "-1.68",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Steinvör Jónsdóttir",
+        "dep": "Viðskiptalausnir",
+        "group": "TOK",
+        "w1weight": "-0.3",
+        "w1per": "-0.32",
+        "w2weight": "0.6",
+        "w2per": "0.63",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Sólveig Ásgeirsdóttir",
+        "dep": "Sölu- og markaðssvið",
+        "group": "Sölusvið",
+        "w1weight": "-2.4",
+        "w1per": "-2.67",
+        "w2weight": "-0.1",
+        "w2per": "-0.11",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Snorri Páll Jónsson ",
+        "dep": "Viðskiptalausnir",
+        "group": "Sala VL",
+        "w1weight": "0",
+        "w1per": "0.00",
+        "w2weight": "-1.9",
+        "w2per": "-1.74",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Snjólaug María Árnadóttir",
+        "dep": "Stjórnsýslulausnir",
+        "group": "Skólalausnir",
+        "w1weight": "-2.2",
+        "w1per": "-2.90",
+        "w2weight": "0.1",
+        "w2per": "0.13",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Sindri Snær Rúnarsson",
+        "dep": "Rekstrarlausnir",
+        "group": "Orri",
+        "w1weight": "-1.1",
+        "w1per": "-1.29",
+        "w2weight": "0",
+        "w2per": "0.00",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Sigrún Sigmarsdóttir",
+        "dep": "Fjármál og rekstur",
+        "group": "Kostnaðarskráning",
+        "w1weight": "0",
+        "w1per": "0.00",
+        "w2weight": "0",
+        "w2per": "0.00",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Sigrún Ósk Jakobsdóttir",
+        "dep": "Human Resources",
+        "group": "Mannauðsmál",
+        "w1weight": "0",
+        "w1per": "0.00",
+        "w2weight": "0",
+        "w2per": "0.00",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Sigrún Magnúsdóttir",
+        "dep": "Viðskiptalausnir",
+        "group": "TOK",
+        "w1weight": "-0.1",
+        "w1per": "-0.10",
+        "w2weight": "0",
+        "w2per": "0.00",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Sigrún Ámundadóttir",
+        "dep": "Public Sector Solutions",
+        "group": "Stjórnsýslulausnir",
+        "w1weight": "-0.3",
+        "w1per": "-0.40",
+        "w2weight": "-1.7",
+        "w2per": "-2.32",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Signý Tindra Dúadóttir",
+        "dep": "Sölu- og markaðssvið",
+        "group": "Verkstæði",
+        "w1weight": "0",
+        "w1per": "0.00",
+        "w2weight": "-0.6",
+        "w2per": "-0.72",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Sandra Birgisdóttir",
+        "dep": "Sölu- og markaðssvið",
+        "group": "Verkstæði",
+        "w1weight": "0",
+        "w1per": "0.00",
+        "w2weight": "0.1",
+        "w2per": "0.11",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Rakel Björt Jónsdóttir",
+        "dep": "Viðskiptalausnir",
+        "group": "Viðmótslausnir og hönnun",
+        "w1weight": "0",
+        "w1per": "0.00",
+        "w2weight": "-1",
+        "w2per": "-1.64",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Ragnar Örn Arnarson Clausen",
+        "dep": "Viðskiptalausnir",
+        "group": "SharePoint",
+        "w1weight": "0",
+        "w1per": "0.00",
+        "w2weight": "0",
+        "w2per": "0.00",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Örn Þór Alfreðsson",
+        "dep": "Sölu- og markaðssvið",
+        "group": "Sölu- og markaðssvið",
+        "w1weight": "0",
+        "w1per": "0.00",
+        "w2weight": "-0.7",
+        "w2per": "-0.83",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Olga Helena Kristinsdóttir",
+        "dep": "Viðskiptalausnir",
+        "group": "Viðskiptalausnasvið",
+        "w1weight": "-0.6",
+        "w1per": "-0.59",
+        "w2weight": "0",
+        "w2per": "0.00",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Ólafur Ólafsson (VL-AX Forritun)",
+        "dep": "Viðskiptalausnir",
+        "group": "Retail",
+        "w1weight": "-0.7",
+        "w1per": "-0.67",
+        "w2weight": "0",
+        "w2per": "0.00",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Oddur Carl Thorarensen",
+        "dep": "Viðskiptalausnir",
+        "group": "Tímar og viðvera",
+        "w1weight": "-0.8",
+        "w1per": "-0.76",
+        "w2weight": "0",
+        "w2per": "0.00",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "María Hlín Steingrímsdóttir",
+        "dep": "Viðskiptalausnir",
+        "group": "Þróun mannauðslausna",
+        "w1weight": "-0.6",
+        "w1per": "-0.83",
+        "w2weight": "-1",
+        "w2per": "-1.40",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Magnea Hilmarsdóttir",
+        "dep": "Viðskiptalausnir",
+        "group": "Þjónustuborð",
+        "w1weight": "1",
+        "w1per": "1.45",
+        "w2weight": "-0.5",
+        "w2per": "-0.73",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Linda Ólafsdóttir",
+        "dep": "Viðskiptalausnir",
+        "group": "TOK",
+        "w1weight": "-0.3",
+        "w1per": "-0.42",
+        "w2weight": "0",
+        "w2per": "0.00",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Kristján Óli Sverrisson",
+        "dep": "Sölu- og markaðssvið",
+        "group": "Tæki og þjónusta",
+        "w1weight": "0",
+        "w1per": "0.00",
+        "w2weight": "0",
+        "w2per": "0.00",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Kristinn Eiríksson",
+        "dep": "Viðskiptalausnir",
+        "group": "Viðskiptalausnir",
+        "w1weight": "-0.8",
+        "w1per": "-0.93",
+        "w2weight": "0",
+        "w2per": "0.00",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Kristín Björg Hrólfsdóttir",
+        "dep": "Fjármál og rekstur",
+        "group": "Mötuneyti",
+        "w1weight": "-3.4",
+        "w1per": "-5.11",
+        "w2weight": "1.3",
+        "w2per": "1.91",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Jónas Yngvi Ásgrímsson",
+        "dep": "Viðskiptalausnir",
+        "group": "Dynamics NAV Þjónusta og ráðgjöf",
+        "w1weight": "1.1",
+        "w1per": "0.92",
+        "w2weight": "0.9",
+        "w2per": "0.74",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Jón Snær Ragnarsson",
+        "dep": "Fjármál og rekstur",
+        "group": "UT deild",
+        "w1weight": "-0.5",
+        "w1per": "-0.47",
+        "w2weight": "1.4",
+        "w2per": "1.31",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Jón Heiðar Erlendsson",
+        "dep": "Hugbúnaðarlausnir",
+        "group": "Sérlausnir",
+        "w1weight": "0",
+        "w1per": "0.00",
+        "w2weight": "-1.9",
+        "w2per": "-1.81",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Jóhannes Björn Arelakis",
+        "dep": "Rekstrarlausnir",
+        "group": "Ráðgjöf og sérfræðiþjónusta",
+        "w1weight": "0",
+        "w1per": "0.00",
+        "w2weight": "-0.3",
+        "w2per": "-0.31",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Jóhann Þór Jónsson",
+        "dep": "Fjármál og rekstur",
+        "group": "Rekstrarsvið",
+        "w1weight": "-0.1",
+        "w1per": "-0.11",
+        "w2weight": "-0.6",
+        "w2per": "-0.64",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Ívar Örn Indriðason",
+        "dep": "Sölu- og markaðssvið",
+        "group": "Markaðs- og samskiptasvið",
+        "w1weight": "0",
+        "w1per": "0.00",
+        "w2weight": "0",
+        "w2per": "0.00",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Ívan Bjarni Jónsson",
+        "dep": "Hugbúnaðarlausnir",
+        "group": "WebMethods",
+        "w1weight": "-0.2",
+        "w1per": "-0.23",
+        "w2weight": "-1.6",
+        "w2per": "-1.84",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Íris Eyfjörð Elíasdóttir",
+        "dep": "Hugbúnaðarlausnir",
+        "group": "Ráðgjöf",
+        "w1weight": "0.2",
+        "w1per": "0.27",
+        "w2weight": "-1.5",
+        "w2per": "-2.08",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Inga María Backman",
+        "dep": "Sölu- og markaðssvið",
+        "group": "Viðskiptastýring",
+        "w1weight": "0",
+        "w1per": "0.00",
+        "w2weight": "-0.7",
+        "w2per": "-0.93",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Hrund Valgeirsdóttir",
+        "dep": "Viðskiptalausnir",
+        "group": "Appþróun",
+        "w1weight": "-0.9",
+        "w1per": "-0.99",
+        "w2weight": "0",
+        "w2per": "0.00",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Hrafnhildur Brynjólfsdóttir",
+        "dep": "Viðskiptalausnir",
+        "group": "Microsoft ráðgjöf og þjónusta",
+        "w1weight": "-1",
+        "w1per": "-1.07",
+        "w2weight": "-0.9",
+        "w2per": "-0.97",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Haukur Hafsteinn Þórsson",
+        "dep": "Viðskiptalausnir",
+        "group": "Vöruþróun",
+        "w1weight": "-0.2",
+        "w1per": "-0.21",
+        "w2weight": "-0.8",
+        "w2per": "-0.86",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Hannes Snorri Helgason",
+        "dep": "Viðskiptalausnir",
+        "group": "Viðskiptagreind",
+        "w1weight": "-0.3",
+        "w1per": "-0.26",
+        "w2weight": "-1.3",
+        "w2per": "-1.12",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Hákon Róbert Jónsson",
+        "dep": "Viðskiptalausnir",
+        "group": "Viðmótslausnir og hönnun",
+        "w1weight": "0.1",
+        "w1per": "0.08",
+        "w2weight": "-0.3",
+        "w2per": "-0.25",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Hafsteinn Guðmundsson",
+        "dep": "Rekstrarlausnir",
+        "group": "Lausnir",
+        "w1weight": "0",
+        "w1per": "0.00",
+        "w2weight": "0",
+        "w2per": "0.00",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Guðrún Gunnlaugsdóttir",
+        "dep": "Viðskiptalausnir",
+        "group": "Tímar og viðvera",
+        "w1weight": "-1.1",
+        "w1per": "-1.28",
+        "w2weight": "-1.7",
+        "w2per": "-2.01",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Guðný Jóna Valgeirsdóttir",
+        "dep": "Viðskiptalausnir",
+        "group": "Viðskiptalausnasvið",
+        "w1weight": "-0.4",
+        "w1per": "-0.53",
+        "w2weight": "-0.3",
+        "w2per": "-0.40",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Guðmundur Ólafur Birgisson",
+        "dep": "Rekstrarlausnir",
+        "group": "Þjónusta og hýsing",
+        "w1weight": "-0.3",
+        "w1per": "-0.34",
+        "w2weight": "0.6",
+        "w2per": "0.67",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Guðmundur Karl Karlsson",
+        "dep": "Stjórnsýslulausnir",
+        "group": "Skattur",
+        "w1weight": "-1.5",
+        "w1per": "-1.64",
+        "w2weight": "-2.1",
+        "w2per": "-2.35",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Guðmundur Karl Atlason",
+        "dep": "Rekstrarlausnir",
+        "group": "Netþjónusta",
+        "w1weight": "-4.5",
+        "w1per": "-4.49",
+        "w2weight": "-0.4",
+        "w2per": "-0.40",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Guðmundur A. Kristjánsson",
+        "dep": "Viðskiptalausnir",
+        "group": "Tækniþjónusta mannauðslausna",
+        "w1weight": "-1.5",
+        "w1per": "-1.52",
+        "w2weight": "0",
+        "w2per": "0.00",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Grétar Símonarson",
+        "dep": "Viðskiptalausnir",
+        "group": "Þróun mannauðslausna",
+        "w1weight": "-2.6",
+        "w1per": "-2.25",
+        "w2weight": "-0.3",
+        "w2per": "-0.26",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Gísli Guðmundsson",
+        "dep": "Rekstrarlausnir",
+        "group": "Rekstrarþjónusta",
+        "w1weight": "0",
+        "w1per": "0.00",
+        "w2weight": "0.7",
+        "w2per": "0.77",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Freyja Magnúsdóttir",
+        "dep": "Rekstrarlausnir",
+        "group": "Rekstrarþjónusta",
+        "w1weight": "0.1",
+        "w1per": "0.16",
+        "w2weight": "0.1",
+        "w2per": "0.16",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Eva Sóley Guðbjörnsdóttir",
+        "dep": "Fjármál og rekstur",
+        "group": "Fjármál og Rekstur",
+        "w1weight": "0",
+        "w1per": "0.00",
+        "w2weight": "-2.9",
+        "w2per": "-4.15",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Estiva Jóhanna Einarsdóttir",
+        "dep": "Viðskiptalausnir",
+        "group": "TOK",
+        "w1weight": "-0.1",
+        "w1per": "-0.12",
+        "w2weight": "-1.1",
+        "w2per": "-1.29",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Elva BJörk Reynisdóttir",
+        "dep": "Viðskiptalausnir",
+        "group": "Verkbókhald og þjónusta",
+        "w1weight": "0",
+        "w1per": "0.00",
+        "w2weight": "0",
+        "w2per": "0.00",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Elísabet Jóna Gunnarsdóttir",
+        "dep": "Viðskiptalausnir",
+        "group": "TOK",
+        "w1weight": "-2.4",
+        "w1per": "-2.57",
+        "w2weight": "0.6",
+        "w2per": "0.64",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Elín Björk Jónsdóttir",
+        "dep": "Viðskiptalausnir",
+        "group": "Appþróun",
+        "w1weight": "0",
+        "w1per": "0.00",
+        "w2weight": "-0.4",
+        "w2per": "-0.43",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Dagný Edda Þórisdóttir",
+        "dep": "Hugbúnaðarlausnir",
+        "group": "Skólalausnir",
+        "w1weight": "-0.8",
+        "w1per": "-1.04",
+        "w2weight": "1.1",
+        "w2per": "1.41",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Dagbjört Ólöf Sigurðardóttir",
+        "dep": "Viðskiptalausnir",
+        "group": "Viðmótslausnir og hönnun",
+        "w1weight": "-0.7",
+        "w1per": "-0.77",
+        "w2weight": "-0.3",
+        "w2per": "-0.33",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Daði Snær Skúlason",
+        "dep": "Sölu- og markaðssvið",
+        "group": "Tæki og þjónusta",
+        "w1weight": "-0.9",
+        "w1per": "-0.85",
+        "w2weight": "0",
+        "w2per": "0.00",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Bryndís Baldursdóttir",
+        "dep": "Viðskiptalausnir",
+        "group": "Viðskiptalausnasvið",
+        "w1weight": "0",
+        "w1per": "0.00",
+        "w2weight": "-0.4",
+        "w2per": "-0.47",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Bragi Bergþórsson",
+        "dep": "Viðskiptalausnir",
+        "group": "Appþróun",
+        "w1weight": "-1.7",
+        "w1per": "-1.60",
+        "w2weight": "0.6",
+        "w2per": "0.56",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Björn Sævar Ólafsson",
+        "dep": "Viðskiptalausnir",
+        "group": "Retail",
+        "w1weight": "0",
+        "w1per": "0.00",
+        "w2weight": "-0.4",
+        "w2per": "-0.45",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Björn Markús Þórsson",
+        "dep": "Rekstrarlausnir",
+        "group": "Söluráðgjöf",
+        "w1weight": "-1.4",
+        "w1per": "-1.53",
+        "w2weight": "0",
+        "w2per": "0.00",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Björn Kristján Arnarson",
+        "dep": "Viðskiptalausnir",
+        "group": "Sala VL",
+        "w1weight": "-0.3",
+        "w1per": "-0.32",
+        "w2weight": "-0.3",
+        "w2per": "-0.32",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Bjarki Traustason",
+        "dep": "Rekstrarlausnir",
+        "group": "Vörustýring",
+        "w1weight": "-0.9",
+        "w1per": "-1.03",
+        "w2weight": "0",
+        "w2per": "0.00",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Benedikt Níels Óskarsson",
+        "dep": "Viðskiptalausnir",
+        "group": "Viðskiptalausnasvið",
+        "w1weight": "0",
+        "w1per": "0.00",
+        "w2weight": "0",
+        "w2per": "0.00",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Auðunn Stefánsson",
+        "dep": "Viðskiptalausnir",
+        "group": "Sala VL",
+        "w1weight": "0",
+        "w1per": "0.00",
+        "w2weight": "1.1",
+        "w2per": "1.14",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Ásgeir Freyr Kristinsson",
+        "dep": "Viðskiptalausnir",
+        "group": "Vöruþróun",
+        "w1weight": "-1.7",
+        "w1per": "-1.66",
+        "w2weight": "-3.4",
+        "w2per": "-3.43",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Árný Björg Ísberg",
+        "dep": "Rekstrarlausnir",
+        "group": "Þjónusta og hýsing",
+        "w1weight": "-0.6",
+        "w1per": "-0.94",
+        "w2weight": "-0.7",
+        "w2per": "-1.11",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Árni Hermann Björgvinsson",
+        "dep": "Viðskiptalausnir",
+        "group": "Þróun mannauðslausna",
+        "w1weight": "-2.9",
+        "w1per": "-3.34",
+        "w2weight": "0",
+        "w2per": "0.00",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Arngrímur Magnússon",
+        "dep": "Rekstrarlausnir",
+        "group": "Ráðgjöf og sérfræðiþjónusta",
+        "w1weight": "0",
+        "w1per": "0.00",
+        "w2weight": "0",
+        "w2per": "0.00",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Arnar Halldórsson",
+        "dep": "Rekstrarlausnir",
+        "group": "Vettvangsþjónusta",
+        "w1weight": "-0.3",
+        "w1per": "-0.26",
+        "w2weight": "-2.3",
+        "w2per": "-2.05",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Arnar Ægisson",
+        "dep": "Sölu- og markaðssvið",
+        "group": "Tæki og þjónusta",
+        "w1weight": "0",
+        "w1per": "0.00",
+        "w2weight": "0",
+        "w2per": "0.00",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Anna Sigríður Hafliðadóttir",
+        "dep": "Sölu- og markaðssvið",
+        "group": "Markaðs- og samskiptasvið",
+        "w1weight": "0",
+        "w1per": "0.00",
+        "w2weight": "0",
+        "w2per": "0.00",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Andri Örn Sigurðsson",
+        "dep": "Rekstrarlausnir",
+        "group": "Vettvangsþjónusta",
+        "w1weight": "0",
+        "w1per": "0.00",
+        "w2weight": "0.6",
+        "w2per": "0.73",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Ágúst Árnason",
+        "dep": "Rekstrarlausnir",
+        "group": "Þjónustuborð",
+        "w1weight": "0.9",
+        "w1per": "0.95",
+        "w2weight": "0.5",
+        "w2per": "0.52",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Agla Steinunn Gísladóttir",
+        "dep": "Rekstrarlausnir",
+        "group": "Grunnþjónusta",
+        "w1weight": "-2.2",
+        "w1per": "-2.59",
+        "w2weight": "-1.6",
+        "w2per": "-1.92",
+        "w3weight": "",
+        "w3per": ""
+    },{
+        "name": "Aðalsteinn Friðriksson",
+        "dep": "Mannauður og markaðsmál",
+        "group": "Mötuneyti",
+        "w1weight": "0",
+        "w1per": "0.00",
+        "w2weight": "0.8",
+        "w2per": "0.94",
+        "w3weight": "",
+        "w3per": ""
+    }
+]}
