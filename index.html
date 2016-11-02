@@ -10,18 +10,32 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/common.css">
   </head>
-  <body ng-app="KjolinnApp" ng-strict-di>
+  <body ng-app="KjolinnApp" class="container" ng-strict-di>
 
-    <!-- Fixed position loading indicator -->
-    <loading class="loading-indicator"></loading>
-
-    <div class="container">
-      <ui-view>
-        <div class="text-center initial-loading">
-          <h2>Loading Site...</h2>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nar">
+                  <li  ui-sref-active="active">
+                    <a href="" ui-sref="home">Staðan mín</a>
+                  </li>
+                  <li  ui-sref-active="active">
+                    <a href="" ui-sref="all">Allir</a>
+                  </li>
+              </ul>
+          </div>
         </div>
-      </ui-view>
-    </div>
+      </nav>
+      <!-- Fixed position loading indicator -->
+      <loading class="loading-indicator"></loading>
+
+
+        <ui-view>
+          <div class="text-center initial-loading">
+            <h2>Loading Site...</h2>
+          </div>
+        </ui-view>
+
 
     <!-- Libs -->
     <script src="lib/jquery-2.1.4.min.js"></script>

@@ -1,28 +1,32 @@
 <table class="table table-striped table-hover table-bordered">
     <thead>
         <tr>
-            <th class="text-left">Nafn</th>
-            <th class="text-left">Deild</th>
-            <th class="text-left">Hópur</th>
-            <th class="text-right">W1 kg.</th>
-            <th class="text-right">W1 %</th>
-            <th class="text-right">W2 kg.</th>
-            <th class="text-right">W2 %</th>
-            <th class="text-right">∑ kg.</th>
-            <th class="text-right">∑ %</th>
+            <th class="text-left" ng-click="$ctrl.sortMe('name')">Nafn</th>
+            <th class="text-left" ng-click="$ctrl.sortMe('divname')">Lausn</th>
+            <th class="text-left" ng-click="$ctrl.sortMe('depname')">Deild</th>
+            <th class="text-right" ng-click="$ctrl.sortMe('w1weight')">W1 kg.</th>
+            <th class="text-right" ng-click="$ctrl.sortMe('w1per')">W1 %</th>
+            <th class="text-right" ng-click="$ctrl.sortMe('w2weight')">W2 kg.</th>
+            <th class="text-right" ng-click="$ctrl.sortMe('w2per')">W2 %</th>
+            <th class="text-right" ng-click="$ctrl.sortMe('w3weight')">W3 kg.</th>
+            <th class="text-right" ng-click="$ctrl.sortMe('w3per')">W3 %</th>
+            <th class="text-right" ng-click="$ctrl.sortMe('finalweight')">∑ kg.</th>
+            <th class="text-right" ng-click="$ctrl.sortMe('finalper')">∑ %</th>
         </tr>
     </thead>
     <tbody>
-        <tr data-ng-repeat="competitor in $ctrl.competitors">
+        <tr data-ng-repeat="competitor in $ctrl.competitors | orderBy : $ctrl.sort.column" ng-init="$ctrl.parseNums(competitor)">
           <td class="text-left">{{competitor.name}}</td>
-          <td class="text-left"><a href="#" ui-sref="/department/{{competitor.dep}}">{{competitor.dep}}</a></td>
-          <td class="text-left"><a href="#" ui-sref="/group/{{competitor.group}}">{{competitor.group}}</a></td>
-          <td class="text-right">{{competitor.w1weight}}</td>
-          <td class="text-right">{{competitor.w1per}}%</td>
-          <td class="text-right">{{competitor.w2weight}}</td>
-          <td class="text-right">{{competitor.w2per}}%</td>
-          <td class="text-right">{{competitor.totalweight}}</td>
-          <td class="text-right">{{competitor.totalper}}%</td>
+          <td class="text-left"><a href="#" ui-sref="division({division: competitor.divshort})">{{competitor.divname}}</a></td>
+          <td class="text-left"><a href="#" ui-sref="department({department: competitor.depnumber})">{{competitor.depname}}</a></td>
+          <td class="text-right">{{competitor.w1weight | customCurrency:"":",":".":2}}</td>
+          <td class="text-right">{{competitor.w1per | customCurrency:"":",":".":2}}%</td>
+          <td class="text-right">{{competitor.w2weight | customCurrency:"":",":".":2}}</td>
+          <td class="text-right">{{competitor.w2per | customCurrency:"":",":".":2}}%</td>
+          <td class="text-right">{{competitor.w3weight | customCurrency:"":",":".":2}}</td>
+          <td class="text-right">{{competitor.w3per | customCurrency:"":",":".":2}}%</td>
+          <td class="text-right">{{competitor.finalweight | customCurrency:"":",":".":2}}</td>
+          <td class="text-right">{{competitor.finalper | customCurrency:"":",":".":2}}%</td>
         </tr>
     </tbody>
 </table>

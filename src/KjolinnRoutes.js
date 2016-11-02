@@ -7,8 +7,6 @@ angular.module('KjolinnApp')
 routeConfig.$inject = ['$stateProvider', '$urlRouterProvider'];
 function routeConfig ($stateProvider, $urlRouterProvider) {
 
-  $urlRouterProvider.otherwise('/');
-
   // Routes
   $stateProvider
     .state('home', {
@@ -23,28 +21,28 @@ function routeConfig ($stateProvider, $urlRouterProvider) {
       }
     })
     .state('department', {
-      url: '/dep/{department}',
+      url: '/department/{department}',
       templateUrl: 'src/view/dep.html',
       controller: 'DepartmentController',
       controllerAs: 'depCtrl',
       resolve: {
-        items: ['$stateParams,','KjolinnService', function ($stateParams, KjolinnService) {
+        items: ['KjolinnService', '$stateParams', function (KjolinnService, $stateParams) {
           return KjolinnService.getByDepartment($stateParams.department);
         }]
       }
     })
-    .state('group', {
-      url: '/group/{group}',
-      templateUrl: 'src/view/group.html',
-      controller: 'GroupController',
-      controllerAs: 'groupCtrl',
+    .state('division', {
+      url: '/division/{division}',
+      templateUrl: 'src/view/div.html',
+      controller: 'DivisionController',
+      controllerAs: 'divCtrl',
       resolve: {
-        items: ['$stateParams,','KjolinnService', function ($stateParams, KjolinnService) {
-          return KjolinnService.getByDivision($stateParams.group);
+        items: ['KjolinnService', '$stateParams', function (KjolinnService, $stateParams) {
+          return KjolinnService.getByDivision($stateParams.division);
         }]
       }
     })
-    .state('public.myinfo', {
+    .state('all', {
       url: '/list',
       templateUrl: 'src/view/list.html',
       controller: 'ListController',
@@ -55,5 +53,7 @@ function routeConfig ($stateProvider, $urlRouterProvider) {
         }]
       }
     });
+
+    $urlRouterProvider.otherwise('/');
 }
 })();

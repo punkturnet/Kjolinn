@@ -3,7 +3,7 @@
 
     angular.module('KjolinnApp')
     .controller('HomeController', HomeController)
-    .controller('AllController', AllController)
+    .controller('ListController', ListController)
     .controller('DepartmentController', DepartmentController)
     .controller('DivisionController', DivisionController);
 
@@ -14,10 +14,10 @@
         homeCtrl.myInfo = myinfo;
     }
 
-    AllController.$inject = ['KjolinnService'];
-    function AllController(KjolinnService){
-        var ctrl = this;
-        ctrl.myInfo = KjolinnService.GetMyInfo();
+    ListController.$inject = ['KjolinnService','items'];
+    function ListController(KjolinnService, items){
+        var listCtrl = this;
+        listCtrl.items = items;
     }
 
     DepartmentController.$inject = ['KjolinnService', 'items'];
@@ -26,10 +26,10 @@
         depCtrl.items = items;
     }
 
-    DivisionController.$inject = ['KjolinnService'];
-    function DivisionController(KjolinnService){
-        var ctrl = this;
-        ctrl.myInfo = KjolinnService.GetMyInfo();
+    DivisionController.$inject = ['KjolinnService', 'items'];
+    function DivisionController(KjolinnService, items){
+        var divCtrl = this;
+        divCtrl.items = items;
     }
 
 })();

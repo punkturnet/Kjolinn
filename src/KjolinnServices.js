@@ -11,7 +11,6 @@
 
         service.getMyInfo = function(){
           //TODO Fetch data from website
-          //console.log('getMyInfo', data.competitors, $rootScope.Username);
           return _.where(competitors, {name: 'Ásgeir Freyr Kristinsson'});
         };
 
@@ -20,11 +19,12 @@
         };
 
         service.getByDepartment = function(department){
-          return _.where(competitors, {dep: department});
+          return _.where(competitors, {depnumber: department});
         };
 
-        service.getByGroup = function(group){
-          return _.where(competitors, {group: group});
+        service.getByDivision = function(division){
+          console.log('division');
+          return _.where(competitors, {divshort: division});
         };
     }
 
