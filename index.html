@@ -12,30 +12,34 @@
   </head>
   <body ng-app="KjolinnApp" class="container" ng-strict-di>
 
-      <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nar">
-                  <li  ui-sref-active="active">
-                    <a href="" ui-sref="home">Staðan mín</a>
-                  </li>
-                  <li  ui-sref-active="active">
-                    <a href="" ui-sref="all">Allir</a>
-                  </li>
-              </ul>
-          </div>
+    <header>
+      <a href="" sr-ref="home">
+        <img src="images/joli.jpg"/>
+      </a>
+    <header>
+
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li  ui-sref-active="active">
+              <a href="" ui-sref="home">Staðan mín</a>
+            </li>
+            <li  ui-sref-active="active">
+              <a href="" ui-sref="all">Allir</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-      <!-- Fixed position loading indicator -->
-      <loading class="loading-indicator"></loading>
+      </div>
+    </nav>
 
-
-        <ui-view>
-          <div class="text-center initial-loading">
-            <h2>Loading Site...</h2>
-          </div>
-        </ui-view>
-
+    <!-- Fixed position loading indicator -->
+    <loading class="loading-indicator"></loading>
+    <ui-view>
+      <div class="text-center initial-loading">
+        <h2>Loading Site...</h2>
+      </div>
+    </ui-view>
 
     <!-- Libs -->
     <script src="lib/jquery-2.1.4.min.js"></script>
@@ -49,9 +53,6 @@
     <script src="src/KjolinnRoutes.js"></script>
     <script src="src/KjolinnControllers.js"></script>
     <script src="src/KjolinnComponents.js"></script>
-
-    <script src="src/loading/loading.component.js"></script>
-    <script src="src/loading/loading.interceptor.js"></script>
 
 
   </body>

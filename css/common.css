@@ -18,3 +18,6 @@
 .ui-view-placeholder {
     margin-top: 60px;
 }
+
+header {margin:20px 0;}
+header img { width:100%; height:auto; }
